@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+      - name: "site"
+        label: "Site content"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Default language", name: "defaultLang", widget: "select", options: ["en", "ko"] }
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Brand mark", name: "brandMark", widget: "string" }
+              - { label: "Brand text", name: "brandText", widget: "string" }
+              - { label: "Hero title", name: "heroTitle", widget: "string" }
+              - { label: "Profile name", name: "profileName", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone (E.164)", name: "phone", widget: "string" }
+              - { label: "Phone display", name: "phoneDisplay", widget: "string" }
+              - { label: "Address (EN)", name: "addressEn", widget: "string" }
+              - { label: "Address (KO)", name: "addressKo", widget: "string" }
+          - label: "Copy (EN)"
+            name: "copyEn"
+            widget: "object"
+            fields:
+              - { label: "Hero badge", name: "heroBadge", widget: "string" }
+              - { label: "Hero subtitle (HTML allowed)", name: "heroSubtitleHtml", widget: "text" }
+              - { label: "About title", name: "aboutTitle", widget: "string" }
+              - { label: "About description", name: "aboutDesc", widget: "string" }
+              - { label: "Side title", name: "sideTitle", widget: "string" }
+              - { label: "Side description", name: "sideDesc", widget: "string" }
+              - { label: "Contact title", name: "contactTitle", widget: "string" }
+              - { label: "Contact description", name: "contactDesc", widget: "string" }
+          - label: "Copy (KO)"
+            name: "copyKo"
+            widget: "object"
+            fields:
+              - { label: "Hero badge", name: "heroBadge", widget: "string" }
+              - { label: "Hero subtitle (HTML allowed)", name: "heroSubtitleHtml", widget: "text" }
+              - { label: "About title", name: "aboutTitle", widget: "string" }
+              - { label: "About description", name: "aboutDesc", widget: "string" }
+              - { label: "Side title", name: "sideTitle", widget: "string" }
+              - { label: "Side description", name: "sideDesc", widget: "string" }
+              - { label: "Contact title", name: "contactTitle", widget: "string" }
+              - { label: "Contact description", name: "contactDesc", widget: "string" }

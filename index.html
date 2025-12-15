@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyung Ho An (Steven An) | Portfolio</title>
+  <meta name="description" content="Kyung Ho An (Steven An) — Learning & Assessment Advisor. A data-driven problem solver bridging local needs and global teams." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">본문 바로가기</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="홈으로">
+        <span class="brand__mark" id="brandMark" aria-hidden="true">KA</span>
+        <span class="brand__text" id="brandText">Kyung Ho An</span>
+      </a>
+
+      <nav class="nav" aria-label="주요 섹션">
+        <a class="nav__link" href="#about" data-nav="about" data-i18n="nav.profile">Profile</a>
+        <a class="nav__link" href="#skills" data-nav="skills" data-i18n="nav.skills">Skills</a>
+        <a class="nav__link" href="#experience" data-nav="experience" data-i18n="nav.experience">Experience</a>
+        <a class="nav__link" href="#education" data-nav="education" data-i18n="nav.education">Education</a>
+        <a class="nav__link" href="#projects" data-nav="projects" data-i18n="nav.projects">Projects</a>
+        <a class="nav__link" href="#side" data-nav="side" data-i18n="nav.side">Side quests</a>
+        <a class="nav__link" href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="테마 전환" aria-pressed="false">
+          <span class="iconbtn__icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="iconbtn" id="langToggle" type="button" aria-label="언어 전환" aria-pressed="false">
+          <span class="iconbtn__icon" aria-hidden="true">EN</span>
+        </button>
+        <button class="iconbtn hamburger" id="menuToggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+          <span class="hamburger__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" hidden>
+      <div class="container mobile__inner">
+        <a class="mobile__link" href="#about" data-close data-i18n="nav.profile">Profile</a>
+        <a class="mobile__link" href="#skills" data-close data-i18n="nav.skills">Skills</a>
+        <a class="mobile__link" href="#experience" data-close data-i18n="nav.experience">Experience</a>
+        <a class="mobile__link" href="#education" data-close data-i18n="nav.education">Education</a>
+        <a class="mobile__link" href="#projects" data-close data-i18n="nav.projects">Projects</a>
+        <a class="mobile__link" href="#side" data-close data-i18n="nav.side">Side quests</a>
+        <a class="mobile__link" href="#contact" data-close data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="badge" data-i18n="hero.badge">Learning &amp; Assessment Advisor</p>
+          <h1 class="hero__title" id="heroTitle">Kyung Ho An (Steven An)</h1>
+          <p class="hero__subtitle" data-i18n-html="hero.subtitle">
+            Learning &amp; assessment sales professional at <strong>Cambridge University Press &amp; Assessment Korea</strong>.
+            A data-driven problem solver who bridges local market needs and global HQ to deliver practical, long-term solutions.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#about" data-i18n="hero.cta.profile">View profile</a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta.contact">Get in touch</a>
+          </div>
+
+          <div class="hero__meta">
+            <a class="chip" href="#contact" data-i18n="hero.meta.email">Email</a>
+            <a class="chip" href="#contact" data-i18n="hero.meta.phone">Phone</a>
+            <a class="chip" href="#projects" data-i18n="hero.meta.case">Case studies</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="프로필 카드">
+          <div class="profile">
+            <div class="profile__avatar" id="profileAvatar" aria-hidden="true">KA</div>
+            <div class="profile__body">
+              <p class="profile__name" id="profileName">Kyung Ho An</p>
+              <p class="profile__role" id="profileRole">Learning &amp; Assessment Advisor</p>
+              <p class="profile__loc" id="profileLocation">Mapo-gu, Seoul, KR</p>
+            </div>
+          </div>
+          <div class="stats" aria-label="요약 지표">
+            <div class="stat">
+              <p class="stat__k">B2B</p>
+              <p class="stat__v">Schools &amp; institutes</p>
+            </div>
+            <div class="stat">
+              <p class="stat__k">CRM</p>
+              <p class="stat__v">Salesforce / BI</p>
+            </div>
+            <div class="stat">
+              <p class="stat__k">Bridge</p>
+              <p class="stat__v">Local ↔ Global</p>
+            </div>
+          </div>
+          <div class="card__footer">
+            <a class="btn btn--small" href="#contact" data-i18n="card.email">Email</a>
+            <a class="btn btn--small btn--ghost" href="#about" data-i18n="card.about">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="about" data-section="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="about.title">Profile</h2>
+          <p class="section__desc" data-i18n="about.desc">A short introduction and how I work.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="panel reveal">
+            <h3 class="panel__title" data-i18n="about.who.title">Who I am</h3>
+            <p class="panel__text" data-i18n="about.who.text">
+              Learning &amp; assessment sales professional currently working as a Learning &amp; Assessment Advisor at
+              Cambridge University Press &amp; Assessment Korea, with a background as an elementary school teacher.
+              Experienced in B2B sales to schools and language institutes, managing accounts and rolling out print and
+              digital ELT solutions in collaboration with distributors and global teams.
+            </p>
+            <ul class="list">
+              <li data-i18n="about.who.li1">Clear communication and strong stakeholder management</li>
+              <li data-i18n="about.who.li2">Comfortable with Salesforce and BI tools for pipelines and forecasting</li>
+              <li data-i18n="about.who.li3">Translate customer needs into practical, long-term solutions</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal">
+            <h3 class="panel__title" data-i18n="about.goal.title">What I’m building toward</h3>
+            <div class="tags" aria-label="관심 태그">
+              <span class="tag">Data-driven</span>
+              <span class="tag">Sales Analytics</span>
+              <span class="tag">Customer Insight</span>
+              <span class="tag">Process</span>
+              <span class="tag">Entrepreneurship</span>
+            </div>
+            <div class="callout">
+              <p class="callout__title" data-i18n="about.goal.callout.title">Long-term goal</p>
+              <p class="callout__text" data-i18n="about.goal.callout.text">Build a service that enables easy data input and turns it into meaningful analysis that people can actually use.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-section="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="skills.title">Skill summary</h2>
+          <p class="section__desc" data-i18n="skills.desc">Strengths across sales, coordination, and analytics tools.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3 class="card__title" data-i18n="skills.c1.title">Bridge local ↔ global</h3>
+            <p class="card__text" data-i18n="skills.c1.text">Coordinate with cross-functional teams and follow established processes from planning to launch.</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title" data-i18n="skills.c2.title">Communication</h3>
+            <p class="card__text" data-i18n="skills.c2.text">Effective communicator with experience in diverse, international teams.</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title" data-i18n="skills.c3.title">Project leadership</h3>
+            <p class="card__text" data-i18n="skills.c3.text">Skilled in leading projects and achieving successful outcomes with strong organization and problem-solving.</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title" data-i18n="skills.c4.title">Sales analytics &amp; CRM tools</h3>
+            <p class="card__text" data-i18n="skills.c4.text">Salesforce, Power BI, Tableau — pipeline management, forecasting, reporting, and data-driven decisions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" data-section="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="exp.title">Experience</h2>
+          <p class="section__desc" data-i18n="exp.desc">Roles and impact, summarized.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__row">
+                <h3 class="timeline__title">Cambridge University Press &amp; Assessment Korea — Learning &amp; Assessment Advisor</h3>
+                <p class="timeline__date">Present</p>
+              </div>
+              <ul class="list">
+                <li>B2B sales to schools and language institutes; account management and solution rollout</li>
+                <li>Collaborate with distributors and global teams to deliver print and digital ELT solutions</li>
+                <li>Use Salesforce and BI tools to track pipelines, forecast sales, and support data-driven decisions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__row">
+                <h3 class="timeline__title">Elementary School Teacher</h3>
+                <p class="timeline__date">Previous</p>
+              </div>
+              <ul class="list">
+                <li>Built strong foundations in communication, structure, and learning design</li>
+                <li>Developed confidence in cross-cultural teaching through international volunteering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" data-section="education">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="edu.title">Education</h2>
+          <p class="section__desc" data-i18n="edu.desc">Academic background and leadership.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__row">
+                <h3 class="timeline__title">Gyeongin National University of Education — Department of Elementary Education</h3>
+                <p class="timeline__date">2015 – 2019</p>
+              </div>
+              <ul class="list">
+                <li>Major: Elementary Education / Art Education</li>
+                <li>Department Student Council President (2017 – 2018) — connected students, professors, and staff; organized events</li>
+                <li>International Educational Volunteering (2018, Sri Lanka) — taught in English, adapted to new cultural environments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__row">
+                <h3 class="timeline__title">Sales Analytics &amp; CRM Tools</h3>
+                <p class="timeline__date">2024 – 2025</p>
+              </div>
+              <ul class="list">
+                <li>Salesforce, Power BI, Tableau — analysis, forecasting, reporting</li>
+                <li>Support data-driven decisions with practical dashboards and insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-section="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="projects.title">Projects / case studies</h2>
+          <p class="section__desc" data-i18n="projects.desc">A template section — share 2–3 projects and I’ll fill this with your real work.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" aria-label="Case study template 1">
+            <div class="project__top">
+              <span class="project__badge">Case study</span>
+              <span class="project__date">YYYY</span>
+            </div>
+            <h3 class="project__title" data-i18n="projects.t1.title">Title — Problem → Approach → Result</h3>
+            <p class="project__text" data-i18n="projects.t1.text">What was the problem, what did you do, and what changed? Add measurable outcomes if possible.</p>
+            <div class="project__tags">
+              <span class="tag">Stakeholders</span><span class="tag">Process</span><span class="tag">Impact</span>
+            </div>
+          </article>
+
+          <article class="project reveal" aria-label="Case study template 2">
+            <div class="project__top">
+              <span class="project__badge">Analytics</span>
+              <span class="project__date">YYYY</span>
+            </div>
+            <h3 class="project__title" data-i18n="projects.t2.title">Dashboard / reporting — From data to decision</h3>
+            <p class="project__text" data-i18n="projects.t2.text">Describe how you tracked pipeline, built insights, or improved forecasting / operations.</p>
+            <div class="project__tags">
+              <span class="tag">Salesforce</span><span class="tag">Power BI</span><span class="tag">Tableau</span>
+            </div>
+          </article>
+
+          <article class="project reveal" aria-label="Case study template 3">
+            <div class="project__top">
+              <span class="project__badge">Launch</span>
+              <span class="project__date">YYYY</span>
+            </div>
+            <h3 class="project__title" data-i18n="projects.t3.title">Solution rollout — Planning to launch</h3>
+            <p class="project__text" data-i18n="projects.t3.text">Explain how you coordinated with distributors/global teams and executed a rollout end-to-end.</p>
+            <div class="project__tags">
+              <span class="tag">Coordination</span><span class="tag">B2B</span><span class="tag">ELT</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="side" data-section="side">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="side.title">Side quests</h2>
+          <p class="section__desc" data-i18n="side.desc">Things I build for fun: small tools, automation, and experiments.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="panel reveal">
+            <h3 class="panel__title" data-i18n="side.p1.title">Builder mindset</h3>
+            <p class="panel__text" data-i18n="side.p1.text">I enjoy turning messy, real-world problems into simple workflows — especially around data input, tracking, and reporting.</p>
+            <ul class="list">
+              <li data-i18n="side.p1.li1">Prototyping dashboards, trackers, and lightweight data tools</li>
+              <li data-i18n="side.p1.li2">Automating repetitive tasks and reporting</li>
+              <li data-i18n="side.p1.li3">Experimenting with UX to make data entry easy</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal">
+            <h3 class="panel__title" data-i18n="side.p2.title">What I’m exploring</h3>
+            <div class="tags" aria-label="side tags">
+              <span class="tag">Spreadsheets</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Prototyping</span>
+            </div>
+            <div class="callout">
+              <p class="callout__title" data-i18n="side.p2.callout.title">Note</p>
+              <p class="callout__text" data-i18n="side.p2.callout.text">If you share 2–3 real examples you’ve done (even internal work), I can turn this section into concrete case studies.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-section="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+          <p class="section__desc" data-i18n="contact.desc">If you want to collaborate or talk, feel free to reach out.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="panel reveal">
+            <h3 class="panel__title" data-i18n="contact.quick.title">Quick contact</h3>
+            <p class="panel__text" data-i18n="contact.quick.desc">Email, phone, and location.</p>
+            <div class="stack">
+              <a class="btn" id="contactEmail" href="mailto:rudgh313@gmail.com?subject=%5BPortfolio%5D%20Contact">rudgh313@gmail.com</a>
+              <a class="btn btn--ghost" id="contactPhone" href="tel:+821048115130">010-4811-5130</a>
+            </div>
+            <p class="panel__text" id="contactAddress" style="margin-top:12px" data-i18n="contact.quick.addr">10-3, Wausan-ro 29 Dagil, Mapo-gu, Seoul, South Korea</p>
+          </article>
+
+          <form class="panel reveal" id="contactForm" autocomplete="on">
+            <h3 class="panel__title" data-i18n="contact.form.title">Message preview</h3>
+            <p class="panel__text" data-i18n="contact.form.desc">This form doesn’t submit (static site). It creates a preview and a mail link.</p>
+
+            <label class="field">
+              <span class="field__label" data-i18n="contact.form.name">Name</span>
+              <input class="field__input" name="name" type="text" placeholder="Kyung Ho An" data-i18n-placeholder="contact.form.namePh" required />
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="contact.form.email">Email</span>
+              <input class="field__input" name="email" type="email" placeholder="you@example.com" data-i18n-placeholder="contact.form.emailPh" required />
+            </label>
+            <label class="field">
+              <span class="field__label" data-i18n="contact.form.msg">Message</span>
+              <textarea class="field__input" name="message" rows="4" placeholder="What can I help you with?" data-i18n-placeholder="contact.form.msgPh" required></textarea>
+            </label>
+
+            <button class="btn" type="submit" data-i18n="contact.form.submit">Create preview</button>
+
+            <div class="preview" id="messagePreview" aria-live="polite" hidden>
+              <p class="preview__title" data-i18n="contact.preview.title">Preview</p>
+              <p class="preview__body" id="previewBody"></p>
+              <a class="btn btn--small" id="mailtoLink" href="#" data-i18n="contact.preview.mail">Send by email</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year"></span> Kyung Ho An. All rights reserved.</p>
+      <a class="footer__top" href="#top">Top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

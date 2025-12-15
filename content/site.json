@@ -1,0 +1,38 @@
+{
+  "defaultLang": "ko",
+  "profile": {
+    "brandMark": "KA",
+    "brandText": "Kyung Ho An",
+    "heroTitle": "Kyung Ho An (Steven An)",
+    "profileName": "Kyung Ho An",
+    "role": "Learning & Assessment Advisor",
+    "location": "Mapo-gu, Seoul, KR"
+  },
+  "contact": {
+    "email": "rudgh313@gmail.com",
+    "phone": "+821048115130",
+    "phoneDisplay": "010-4811-5130",
+    "addressEn": "10-3, Wausan-ro 29 Dagil, Mapo-gu, Seoul, South Korea",
+    "addressKo": "서울특별시 마포구 와우산로29다길 10-3"
+  },
+  "copyEn": {
+    "heroBadge": "Learning & Assessment Advisor",
+    "heroSubtitleHtml": "Learning &amp; assessment sales professional at <strong>Cambridge University Press &amp; Assessment Korea</strong>. A data-driven problem solver who bridges local market needs and global HQ to deliver practical, long-term solutions.",
+    "aboutTitle": "Profile",
+    "aboutDesc": "A short introduction and how I work.",
+    "sideTitle": "Side quests",
+    "sideDesc": "Things I build for fun: small tools, automation, and experiments.",
+    "contactTitle": "Contact",
+    "contactDesc": "If you want to collaborate or talk, feel free to reach out."
+  },
+  "copyKo": {
+    "heroBadge": "Learning & Assessment Advisor",
+    "heroSubtitleHtml": "<strong>Cambridge University Press &amp; Assessment Korea</strong>에서 Learning &amp; Assessment Advisor로 일하고 있습니다. 로컬 시장의 니즈와 글로벌 팀의 방향 사이를 연결하며, 데이터 기반으로 문제를 정의하고 실행합니다.",
+    "aboutTitle": "프로필",
+    "aboutDesc": "내가 어떤 사람인지, 어떤 방식으로 일하는지 요약했습니다.",
+    "sideTitle": "개발/사이드 프로젝트",
+    "sideDesc": "업무 밖에서도 작은 도구를 만들고 실험하는 걸 좋아합니다.",
+    "contactTitle": "연락",
+    "contactDesc": "협업/커리어/프로젝트 이야기는 언제든 환영합니다."
+  }
+}
